@@ -30,6 +30,14 @@ This software is written in Golang, HTML, and CSS. The directory structure is ba
 
 - **views**: This directory contains two subdirectories **templates** and **static**. The first subdirectory contains all the HTML files. The second subdirectory contains all the CSS files and images also. 
 
+---
+
+## Files
+
+- **.gitignore**: It contains all the files that should be ignored.
+- **Procfile**: This file is used to deploy an app on heroku server.
+
+
 ## Author Info
 
 - YouTube - [ibilalkayy](https://www.youtube.com/channel/UCBLTfRg0Rgm4FtXkvql7DRQ)

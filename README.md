@@ -36,7 +36,7 @@ This software is written in Golang, HTML, and CSS. The directory structure is ba
 
 - **.gitignore**: It contains all the files that should be ignored.
 - **Procfile**: This file is used to deploy an app on heroku server.
-
+- **main.go**: It calls the routes and use a port to run an app.
 
 ## Author Info
 

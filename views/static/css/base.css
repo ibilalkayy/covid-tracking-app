@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+html, body {
+    height: 100;
+}
+
+body {
+    background-color: rgb(12, 235, 235);
+    color: black;
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+
+nav, footer {
+    padding: 2px calc((100% - 1300px) / 2) 0;
+}
+
+section {
+    padding: 2px calc((90% - 1000px) / 2) 0;
+    margin-top: 54px;
+    margin-bottom: 54px;
+    min-height: calc(100vh - 228px);
+    overflow: auto;
+}
+
+nav {
+    border-bottom: 1px solid rgb(9, 223, 223);
+    padding-top: 17px;
+    padding-bottom: 15px;
+    height: 60px;
+    background-color: black;
+}
+
+nav a {
+    margin-right: 1.5em;
+    color: rgb(185, 192, 192);
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav div {
+    width: 50%;
+    float: left;
+}
+
+nav div:last-child {
+    text-align: right;
+}
+
+nav div:last-child a {
+    margin-left: 1.2em;
+    margin-right: 0;
+}
+
+footer {
+    border-top: 1px solid rgb(5, 214, 214);
+    padding-top: 17px;
+    padding-bottom: 15px;
+    height: 60px;
+    background-color: black;
+    color: rgb(190, 194, 194);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(190, 194, 194);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+

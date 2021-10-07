@@ -1,0 +1,15 @@
+{{template "base" .}}
+
+{{define "title"}} Home {{end}}
+
+{{define "nav"}}
+    <a href="/signup">Signup</a>
+    <a href="/login">Login</a>
+{{end}}
+
+{{define "body"}}
+    <h1>Home page</h1> <br>
+    <p>This website contains the code of a covid tracking app that targets the US states and show the data of covid-19 on Google Map. The data will contain positive and negative cases, hospitalized and recovered patients, and the number of deaths.</p> <br>    
+    <p>The data is taken from the <a href="https://www.postman.com/"> postman.com </a> which contans different collections of covid data. These collections contain the data from different countries and their states. Although the data was not just limited to positive, negative case, etc. It contains a bunch of data that I ignored and just took some of them.</p> <br>
+    <p>This app uses the Json Web Token(JWT) to authenticate a user. It generates, stores and deletes a token in a cookie. This app also uses Redis and MongoDB database which stores the data. Redis stores the data in a cache and MongoDB stores the data in different servers like AWS, Azure, Google Cloud.</p>     
+{{end}}

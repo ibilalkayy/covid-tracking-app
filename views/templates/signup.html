@@ -1,0 +1,51 @@
+{{template "base" .}}
+
+{{define "title"}} Signup {{end}}
+
+<head>
+    <link rel="stylesheet" href="../static/css/form.css">
+</head>
+
+{{define "nav"}}
+    <a href="/signup">Signup</a>
+    <a href="/login">Login</a>
+{{end}}
+
+{{define "body"}}
+    <div class="failure">
+        {{.SignupFailure}}
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="../static/img/welcome.png" alt="Welcome" width="500" height="333">
+        </div>
+        <div class="column">
+            <h1>Sign Up</h1>
+            <p>Signup to create an account!</p>
+            <form action="/signup" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm-password</label>
+                    <input type="password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <div>
+                    <input type="submit" value="Signup">
+                </div>
+                <div class="link">
+                    <a href="/login">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+{{end}}

@@ -35,3 +35,5 @@ This software is written in Golang, HTML, and CSS. The directory structure is ba
 - YouTube - [ibilalkayy](https://www.youtube.com/channel/UCBLTfRg0Rgm4FtXkvql7DRQ)
 - LinkedIn - [ibilalkayy](https://www.linkedin.com/in/ibilalkayy/)
 - Twitter - [ibilalkayy](https://twitter.com/ibilalkayy)
+
+[Back to Top](#covid-tracking-app)

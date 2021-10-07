@@ -22,7 +22,7 @@ var Connect = Connection()
 // Connect to Mongodb database
 func Connection() *mongo.Client {
 	// Use the database URL to connect
-	clientOptions := options.Client().ApplyURI("mongodb+srv://coviduser:us76zFEC1gseADQl@cluster1.2inap.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+	clientOptions := options.Client().ApplyURI("mongodb+srv://<username>:<password>@<clustername>.2inap.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
 		log.Fatal(err)

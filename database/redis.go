@@ -18,8 +18,8 @@ type MyToken struct {
 func Set(id, tokenString string) {
 	// This variable saves the redis credentials
 	client := redis.NewClient(&redis.Options{
-		Addr:     "redis-14648.c60.us-west-1-2.ec2.cloud.redislabs.com:14648",
-		Password: "bxBgDSYjTCZX7cDpIy9uZRlTa97Uc5KA",
+		Addr:     "host:port",
+		Password: "password",
 		DB:       0,
 	})
 
@@ -39,8 +39,8 @@ func Set(id, tokenString string) {
 // Get, fetch the data from redis
 func Get(id string) bool {
 	client := redis.NewClient(&redis.Options{
-		Addr:     "redis-14648.c60.us-west-1-2.ec2.cloud.redislabs.com:14648",
-		Password: "bxBgDSYjTCZX7cDpIy9uZRlTa97Uc5KA",
+		Addr:     "host:port",
+		Password: "password",
 		DB:       0,
 	})
 
@@ -62,8 +62,8 @@ func Get(id string) bool {
 // Del removes the data from redis
 func Del(id string) {
 	client := redis.NewClient(&redis.Options{
-		Addr:     "redis-14648.c60.us-west-1-2.ec2.cloud.redislabs.com:14648",
-		Password: "bxBgDSYjTCZX7cDpIy9uZRlTa97Uc5KA",
+		Addr:     "host:port",
+		Password: "password",
 		DB:       0,
 	})
 

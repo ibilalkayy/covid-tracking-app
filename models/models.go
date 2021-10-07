@@ -1,6 +1,6 @@
 package models
 
-// User struct checks the user credentials
+// User struct has the user credentials
 type User struct {
 	Name            string
 	Email           string
